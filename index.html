@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>MONEY COBRANÇAS DE CRÉDITOS LTDA</title>
+    <style>
+        :root {
+            --color_1: rgba(0,0,0,1);
+            --color_2: rgba(255,255,255,1);
+            --color_3: rgba(43, 101, 139, 1);
+            --color_4: rgba(33, 90, 126, 1);
+            --color_6: rgba(241,242,255,1);
+            --color_8: rgba(100,100,100,1);
+        }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: #eee;
+            color: var(--color_1);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: var(--color_3);
+            color: var(--color_2);
+            position: relative;
+            z-index: 1000;
+        }
+
+        header img {
+            max-height: 50px;
+            margin-right: auto; /* Espaçamento à direita do logotipo */
+        }
+
+        .nav-menu {
+            display: none;
+        }
+
+        .nav-menu a {
+            color: var(--color_2);
+            text-decoration: none;
+            font-size: 18px; /* Aumentar a fonte em 3px */
+            margin-left: 20px;
+        }
+
+        .nav-menu a.home {
+            font-weight: bold; /* Negrito para a home */
+        }
+
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .hamburger-menu div {
+            width: 100%;
+            height: 3px;
+            background-color: var(--color_2);
+        }
+
+        @media (max-width: 767px) {
+            header {
+                justify-content: space-between;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                padding: 10px;
+            }
+            .nav-menu {
+                display: none;
+            }
+            .hamburger-menu {
+                display: flex;
+                margin-right: 20px; /* Espaçamento à direita para harmonia */
+            }
+        }
+
+        @media (min-width: 768px) {
+            .nav-menu {
+                display: flex;
+                gap: 20px;
+            }
+            .hamburger-menu {
+                display: none;
+            }
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+        }
+        .section {
+            margin-top: 60px; /* Adiciona espaço no topo para o cabeçalho fixo em mobile */
+            margin-bottom: 2rem;
+        }
+        .button {
+            background-color: var(--color_4);
+            color: var(--color_2);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: var(--color_2);
+            color: var(--color_3);
+        }
+        .partners img {
+            max-width: 150px;
+            margin: 10px;
+        }
+
+        /* CSS específico para a seção de serviços */
+        #servicos .service {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 700px; /* Tamanho máximo de 700px */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #servicos .service img {
+            width: 80%;
+            max-width: 300px; /* Tamanho máximo da imagem no computador */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        #servicos .service h3 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        #servicos .service p {
+            font-size: 1em;
+        }
+
+        @media (max-width: 767px) {
+            #servicos .service img {
+                width: 80%; /* 80% da largura da tela no mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logotipo.png" alt="Logotipo da Empresa">
+        <nav class="nav-menu">
+            <a href="#sobre" class="home">Home</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#parceiros">Parceiros</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <div class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div class="content">
+        <section class="section" id="sobre" style="background-image: url('background.jpg'); background-size: cover; background-position: center; color: white; padding: 50px 20px;">
+            <div style="max-width: 800px; margin: auto; background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                <h2>Sobre a MONEY COBRANÇAS DE CRÉDITOS LTDA</h2>
+                <p>A MONEY COBRANÇAS DE CRÉDITOS LTDA é uma empresa dedicada a oferecer as melhores soluções em recuperação de crédito. Com anos de experiência no mercado, nossa missão é ajudar nossos clientes a retomar o controle financeiro através de estratégias eficazes e personalizadas. Nosso compromisso é com a excelência e a satisfação de nossos clientes.</p>
+            </div>
+        </section>
+        <section class="section" id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="service">
+                <img src="consulta_credito.jpg" alt="Consulta de Crédito">
+                <h3>Consulta de Crédito</h3>
+                <p>Nossa consulta de crédito fornece informações detalhadas sobre a situação financeira de indivíduos e empresas, ajudando a tomar decisões informadas.</p>
+            </div>
+            <div class="service">
+                <img src="negociacao_dividas.jpg" alt="Negociação de Dívidas">
+                <h3>Negociação de Dívidas</h3>
+                <p>Oferecemos serviços de negociação de dívidas para ajudar nossos clientes a obter as melhores condições de pagamento e recuperar a estabilidade financeira.</p>
+            </div>
+            <div class="service">
+                <img src="assessoria_juridica.jpg" alt="Assessoria Jurídica">
+                <h3>Assessoria Jurídica</h3>
+                <p>Nossa equipe de advogados especializados está pronta para oferecer suporte jurídico completo para a recuperação de crédito e defesa dos interesses de nossos clientes.</p>
+            </div>
+            <div class="service">
+                <img src="gestao_cobrancas.jpg" alt="Gestão de Cobranças">
+                <h3>Gestão de Cobranças</h3>
+                <p>Implementamos estratégias de cobrança eficientes para garantir que nossos clientes recebam seus créditos de maneira rápida e segura.</p>
+            </div>
+        </section>
+        <section class="section" id="parceiros">
+            <h2>Grupo Jurídico</h2>
+            <div class="partner" style="display: flex; align-items: center; margin-bottom: 20px;">
+                <img src="parceiro1.png" alt="Parceiro 1" style="width: 150px; height: auto; margin-right: 20px;">
+                <h3>Parceiro 1</h3>
+            </div>
+            <div class="partner" style="display: flex; align-items: center; margin-bottom: 20px;">
+                <img src="parceiro2.png" alt="Parceiro 2" style="width: 150px; height: auto; margin-right: 20px;">
+                <h3>Parceiro 2</h3>
+            </div>
+            <div class="partner" style="display: flex; align-items: center; margin-bottom: 20px;">
+                <img src="parceiro3.png" alt="Parceiro 3" style="width: 150px; height: auto; margin-right: 20px;">
+                <h3>Parceiro 3</h3>
+            </div>
+            <div class="partner" style="display: flex; align-items: center;">
+                <img src="parceiro4.png" alt="Parceiro 4" style="width: 150px; height: auto; margin-right: 20px;">
+                <h3>Parceiro 4</h3>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 MONEY COBRANÇAS DE CRÉDITOS LTDA. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        console.log("Página carregada.");
+    </script>
+</body>
+</html>
