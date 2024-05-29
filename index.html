@@ -154,6 +154,16 @@
         #servicos .service p {
             font-size: 1em;
         }
+        
+        .info-empresa {
+          margin: 20px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        .endereco {
+          margin-bottom: 10px;
+        }
 
         @media (max-width: 767px) {
             #servicos .service img {
@@ -208,24 +218,28 @@
             </div>
         </section>
         <section class="section" id="parceiros">
-            <h2>Grupo Jurídico</h2>
-            <div class="partner" style="display: flex; align-items: center; margin-bottom: 20px;">
-                <img src="alan.jpeg" alt="Parceiro 1" style="width: 150px; height: auto; margin-right: 20px;">
-                <h3>Parceiro 1</h3>
+            <h2>Parceiros</h2>
+            <div class="partner" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 20px;">
+                <img src="equipe-juridica-logo.png" alt="Assessoria jurídica em parceria" style="width: 150px; height: auto; margin-bottom: 10px;">
+                <h3 style="margin: 0;">Equipe Jurídica</h3>
+                <p style="font-size: 14px; margin: 5px 0;">Parceria direta com Escritório V.</p>
             </div>
-            <div class="partner" style="display: flex; align-items: center; margin-bottom: 20px;">
-                <img src="alan.jpeg" alt="Parceiro 2" style="width: 150px; height: auto; margin-right: 20px;">
-                <h3>Parceiro 2</h3>
-            </div>
-            <div class="partner" style="display: flex; align-items: center; margin-bottom: 20px;">
-                <img src="alan.jpeg" alt="Parceiro 3" style="width: 150px; height: auto; margin-right: 20px;">
-                <h3>Parceiro 3</h3>
-            </div>
-            <div class="partner" style="display: flex; align-items: center;">
-                <img src="alan.jpeg" alt="Parceiro 4" style="width: 150px; height: auto; margin-right: 20px;">
-                <h3>Parceiro 4</h3>
+            <div class="partner" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 20px;">
+                <img src="banco-aberlado-logo.webp" alt="Banco Aberlado" style="width: 150px; height: auto; margin-bottom: 10px;">
+                <h3 style="margin: 0;">Banco Aberlado</h3>
+                <p style="font-size: 14px; margin: 5px 0;">Descrição breve do parceiro, destacando sua especialização e serviços oferecidos.</p>
             </div>
         </section>
+        <div class="info-empresa">
+        <h2>Informações da Empresa</h2>
+        <div class="endereco">
+          <!-- Ícone de localização -->
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Rua Exemplo, 123 - Bairro Exemplo - Cidade Exemplo</span>
+        </div>
+        <div class="cnpj">
+          <strong>CNPJ:</strong> 12.345.678/0001-90
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 MONEY COBRANÇAS DE CRÉDITOS LTDA. Todos os direitos reservados.</p>
